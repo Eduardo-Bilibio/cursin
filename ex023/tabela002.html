@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        table {
+            position: relative;
+            padding: 8px;
+            width: 400px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(173, 11, 78);
+        }
+    
+        thead, tfoot{
+            background-color: rgb(173, 11, 78);
+            color: white;
+        }
+
+        td, th {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        caption {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            
+
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: chocolate;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(187, 1, 1);
+            color: white;
+        }
+    </style>
+    <!--efeito zebrado acima-->
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia de tabelas:
+        table
+            thead (cabeça)
+                tr, td, th
+            tbody (corpo)
+                tr, td, th
+            tfoot (pé)
+                tr, td, th
+
+        td = dado
+        th = titulo
+        tr = linha
+        table = criar uma tabela para armazernar as tags acima
+    -->
+    <table>
+        <caption>População dos estado Brasileiros</caption>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>41 262 199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 693 929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8 452 381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>41 262 199</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>41 262 199</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>41 262 199</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>41 262 199</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>14 016 906</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>19 597 330</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>15 989 929</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>14 016 906</td>
+            </tr>
+            
+        </tbody>
+        <!--
+            quando a gente vai colocar um titulo que não é titulo
+            de uma coluna e sim de uma linha, como no tfoot,
+            a gente tem que declara que dizemos isso, usando o
+            scope = row
+            isso é importante para os mecanismos de busca
+        -->
+        <tfoot>
+            <th>Total de habitantes</th>
+            <td>123411244</td>
+        </tfoot>
+
+    </table>
+
+    <p>
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo.
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo. 
+        O Curso de HTML5 e CSS3 vai ensinar a criar sites usando a linguagem de marcação hipertexto (HTML) e  folhas de estilo em cascata (CSS), todas em suas versões mais recentes. Neste curso, o Professor Gustavo Guanabara criou um conjunto de vídeos, exercícios, desafios e um material de apoio em forma de e-book com 30 capítulos ao todo.  
+    </p>
+</body>
+</html>
