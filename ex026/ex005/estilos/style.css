@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor4);
+}
+
+:root {
+    --cor2: #3297ac;
+    --cor3: #FF8552;
+    --cor4: #cfcfcf;
+    --cor5: #1c4d57;
+
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: var(--cor5);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+}
+
+nav > p{
+    display: block;
+    padding: 10px;
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}
+
+nav > p:hover{
+    background-color: #247080;
+}
+
+nav {
+    padding: 0px;
+    background-color: var(--cor2);
+    display: none;
+}
+
+i#burguer {
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin: 0;
+    background-color: var(--cor2);
+}
+
+main {
+    margin: auto;
+    width: 90vw; 
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    font-size: 24px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: auto;
+}
+
+article > p {
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(25, 65, 65);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 2px;
+    margin: 0;
+}
+
+@media screen and (min-width: 1025px){
+    i#burguer {
+        display: none;
+    }
+
+    nav#itens {
+        display: none;
+    }
+
+    nav#pc > p:hover{
+        background-color: #247080;
+    }
+
+    nav#pc {
+        display: block;
+        background-color: #3297ac;
+        padding: 10px;
+    }
+    
+    nav#pc > p {
+        display: inline;
+        background-color:#3297ac;
+    }
+}
